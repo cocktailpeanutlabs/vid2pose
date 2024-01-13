@@ -2,7 +2,7 @@ const path = require('path')
 module.exports = {
   version: 1,
   title: "vid2pose",
-  description: "[NVIDIA GPU ONLY] video to Openpose & DWPose",
+  description: "Video to Openpose & DWPose (All OS supported) https://github.com/sdbds/vid2pose",
   icon: "icon.gif",
   menu: async (kernel) => {
     let installing = await kernel.running(__dirname, "install.js")
