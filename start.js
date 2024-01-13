@@ -9,6 +9,9 @@ module.exports = {
     "method": "shell.run",
     "params": {
       "venv": "env",
+      "env": {
+        "PYTORCH_ENABLE_MPS_FALLBACK": "1"
+      },
       "path": "app",
       "message": "python video2openpose2.py --pose_model={{local.type}}",
       "on": [ { "event": "/https?:\/\/[0-9.:]+/", "done": true } ]
