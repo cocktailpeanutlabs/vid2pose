@@ -14,7 +14,7 @@ module.exports = {
   }],
   "run": [{
     "method": "shell.run",
-    "params": { "message": "git clone --recurse-submodules https://github.com/candywrap/vid2pose app" }
+    "params": { "message": "git clone https://github.com/candywrap/vid2pose app" }
   }, {
     "method": "shell.run",
     "params": {
