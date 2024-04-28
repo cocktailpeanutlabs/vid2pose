@@ -23,7 +23,8 @@ module.exports = {
       "message": [
         "{{(gpu === 'nvidia' ? self.cmds.nvidia : (gpu === 'amd' ? self.cmds.amd : self.cmds.default))}}",
         "pip install opencv-python gradio==3.50.2",
-        "pip install -U openmim mmengine mmcv mmdet mmpose",
+        "pip install -U openmim",
+        "mim install mmengine mmcv mmdet mmpose",
         "python -m pip install -U pip",
         "pip install -r requirements.txt"
       ]
