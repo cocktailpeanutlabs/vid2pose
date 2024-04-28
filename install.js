@@ -1,6 +1,6 @@
 module.exports = {
   "cmds": {
-    "nvidia": "pip install torch torchvision torchaudio xformers --index-url https://download.pytorch.org/whl/cu118",
+    "nvidia": "pip install torch torchvision torchaudio xformers --index-url https://download.pytorch.org/whl/cu121",
     "amd": "pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/rocm5.6",
     "default": "pip install torch torchvision torchaudio"
   },
@@ -24,6 +24,7 @@ module.exports = {
         "{{(gpu === 'nvidia' ? self.cmds.nvidia : (gpu === 'amd' ? self.cmds.amd : self.cmds.default))}}",
         "pip install opencv-python gradio==3.50.2",
         "pip install -U openmim mmengine mmcv mmdet mmpose",
+        "python -m pip install -U pip",
         "pip install -r requirements.txt"
       ]
     }
